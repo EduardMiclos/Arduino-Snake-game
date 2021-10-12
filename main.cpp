@@ -9,6 +9,7 @@ using namespace std;
 
 #define MAZE_ROW_SIZE 8
 #define MAZE_COL_SIZE 8
+#define FRAME_RATE 25
 
 
 
@@ -396,9 +397,8 @@ void loop(){
   int onScreenTime, resetGame = 0;
   
   while(!resetGame){
-
     onScreenTime = 0;
-    while(onScreenTime <= 25){
+    while(onScreenTime <= FRAME_RATE){
       lightUp(maze);
       onScreenTime++;
     }
