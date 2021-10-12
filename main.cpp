@@ -409,7 +409,7 @@ void loop(){
     irrecv.resume(); 
   }
 
-    /* Checking if the signal corresponds to a certain move (LEFT, UPT, RIGHT, DOWN) */
+    /* Checking if the signal corresponds to a certain move (LEFT, UPT, RIGHT, DOWN). */
     if(signalValue != NONE){
       lastValidValue = signalValue;
       resetGame = updateGame(signalValue);
